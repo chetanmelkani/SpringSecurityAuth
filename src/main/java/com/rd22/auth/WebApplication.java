@@ -1,16 +1,14 @@
-package com.hellokoding.auth;
+package com.rd22.auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class WebApplication extends SpringBootServletInitializer {
-    @Override
+public class WebApplication {
+/*    @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(WebApplication.class);
-    }
+    }*/
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(WebApplication.class, args);

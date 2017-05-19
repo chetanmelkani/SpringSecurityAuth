@@ -1,9 +1,7 @@
-package com.hellokoding.auth.web;
+package com.rd22.auth.web;
 
-import com.hellokoding.auth.model.User;
-import com.hellokoding.auth.service.SecurityService;
-import com.hellokoding.auth.service.UserService;
-import com.hellokoding.auth.validator.UserValidator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,8 +10,16 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.rd22.auth.model.User;
+import com.rd22.auth.service.SecurityService;
+import com.rd22.auth.service.UserService;
+import com.rd22.auth.validator.UserValidator;
+
 @Controller
 public class UserController {
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
+	
     @Autowired
     private UserService userService;
 

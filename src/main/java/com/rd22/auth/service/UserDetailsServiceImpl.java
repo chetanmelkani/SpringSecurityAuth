@@ -1,8 +1,9 @@
-package com.hellokoding.auth.service;
+package com.rd22.auth.service;
 
-import com.hellokoding.auth.model.Role;
-import com.hellokoding.auth.model.User;
-import com.hellokoding.auth.repository.UserRepository;
+import com.rd22.auth.model.Role;
+import com.rd22.auth.model.User;
+import com.rd22.auth.repository.UserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

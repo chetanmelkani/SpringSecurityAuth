@@ -1,7 +1,8 @@
-package com.hellokoding.auth.validator;
+package com.rd22.auth.validator;
 
-import com.hellokoding.auth.model.User;
-import com.hellokoding.auth.service.UserService;
+import com.rd22.auth.model.User;
+import com.rd22.auth.service.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
